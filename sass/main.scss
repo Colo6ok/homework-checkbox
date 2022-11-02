@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0,0,0,0);
+}
+
+.box__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box__input:checked ~ .input__controller {
+    background-color: aqua;
+}
+
+.input__controller {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
